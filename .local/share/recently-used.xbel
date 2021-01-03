@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/ghost/.screenlayout/layout.sh" added="2020-12-21T10:24:12Z" modified="2020-12-21T10:24:12Z" visited="2020-12-21T10:24:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2020-12-21T10:24:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ghost/Downloads/st-0.1.1.tar.gz" added="2020-12-21T12:05:22Z" modified="2020-12-21T20:05:38Z" visited="2020-12-21T12:05:22Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2020-12-21T20:05:38Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ghost/Downloads/dmenu-5.0.tar.gz" added="2020-12-21T12:25:14Z" modified="2020-12-21T12:25:14Z" visited="2020-12-21T12:25:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2020-12-21T12:25:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ghost/Downloads/dwm-6.2.tar.gz" added="2020-12-21T13:57:27Z" modified="2020-12-21T13:57:27Z" visited="2020-12-21T13:57:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2020-12-21T13:57:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ghost/Downloads/dwm-6.2(1).tar.gz" added="2020-12-21T18:24:24Z" modified="2020-12-21T18:24:24Z" visited="2020-12-21T18:24:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2020-12-21T18:24:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ghost/Downloads/st-0.8.4.tar.gz" added="2020-12-22T10:56:57Z" modified="2020-12-22T10:56:57Z" visited="2020-12-22T10:56:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2020-12-22T10:56:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ghost/Downloads/bug-fixes" added="2020-12-30T12:00:45Z" modified="2020-12-30T12:00:45Z" visited="2020-12-30T12:00:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2020-12-30T12:00:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ghost/.screenlayout/tmp" added="2020-12-31T21:18:28Z" modified="2020-12-31T21:18:28Z" visited="2020-12-31T21:18:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2020-12-31T21:18:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ghost/Pictures/tree_horizon_minimalism_128903_2560x1080.jpg" added="2021-01-02T14:06:33Z" modified="2021-01-02T19:32:32Z" visited="2021-01-02T14:06:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2021-01-02T14:06:33Z" count="2"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2021-01-02T19:32:32Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

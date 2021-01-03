@@ -1,0 +1,27 @@
+First reqs and software installation
+Downloading necesseary source from suckless or onw repo
+Creating bin folder for binaries
+Compiling, or creating an own repo with the already built binaries (with necessary patches)
+After that ricing Vim, Tmux, dir-listing, GTK-3, GTK-2, fonts, QT.. ________
+Setting up bashrc, compton, ranger, xinitrc, Xresources, Xdefaults  ________|-----> for these stuff a dot file repo should be created
+maybe setting up Firefox theme (maybe cant be automatized)
+fancygit bash
+Lightdm should be used as DM. But for now I just decided to to use any DM.
+Screen lock also necessary. Slock will be used. Key combination should be added to dwm to lock it and should check for themes.
+
+Important Note: Keep all stuff in user home folder where possible (I wont keep the binaries there, I rather install it on the system.)
+
+
+TODO
+Custom repos that I should create: st, dwm, dmenu, dwmblocks, dotfiles
+Repo for slock. 
+Put Lock symbol on slcok.
+I should add the binaries of compiled file to .gitingore.
+Patch dwm to autoright and maybe autorun - Assignrightandbelow patched, autorun is not necessary yet.
+-dmenu center
+vim autocempletion (file and development too, supertab)
+Suckless tool should be located under .config (ex. .config/Suckless/dmenu)
+Slock: the monitor should be sent to sleep after a certain amount of time.
+
+
+
