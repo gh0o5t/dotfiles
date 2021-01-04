@@ -10,7 +10,7 @@ read
 
 SUCKLESS_HOME=$HOME/Suckless
 REQS="build-essential xorg xinput x11-xserver-utils libimlib2-dev libxft-dev libfontconfig1 libx11-6 libxinerama-dev xserver-xorg-dev \
-compton vim vim-gtk pcmanfm arandr lxappearance htop ranger tmux qt5ct feh firefox-esr pasystray pavucontrol network-manager nm-tray dunst locate"
+compton vim vim-gtk pcmanfm arandr lxappearance htop ranger tmux qt5ct feh firefox-esr alsa-utils network-manager dunst locate"
 
 # check if root
 #if [ "$EUID" -ne 0 ]

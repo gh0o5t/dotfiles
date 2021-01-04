@@ -1,5 +1,5 @@
 First reqs and software installation
-Downloading necesseary source from suckless or onw repo
+Downloading necessary source from suckless or onw repo
 Creating bin folder for binaries
 Compiling, or creating an own repo with the already built binaries (with necessary patches)
 After that ricing Vim, Tmux, dir-listing, GTK-3, GTK-2, fonts, QT.. ________
@@ -23,5 +23,8 @@ vim autocempletion (file and development too, supertab)
 Suckless tool should be located under .config (ex. .config/Suckless/dmenu)
 Slock: the monitor should be sent to sleep after a certain amount of time.
 
-
-
+Video and sound card drivers should be installed properly.
+For sound it seems alsa will be enough for my usage, pulseaudio is not necessary.
+I will not need network manager tray either.
+If certain settings will be necessary for sound or network, then alsamixer and nmtui should be used for easier setup.
+Xbacklight will be necesseray for backlight control and for backlight and sound settings change a key combination should be added to dwm config.
