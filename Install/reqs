@@ -1,0 +1,2 @@
+build-essential xorg x11-xserver-utils libxft-dev libfontconfig1 libx11-6 libxinerama-dev suckless-tools xserver-xorg-dev
+compton vim vim-gtk pcmanfm arandr lxappereance htop ranger tmux qt5ct feh firefox-esr pasystray pavucontrol network-manager nm-tray
