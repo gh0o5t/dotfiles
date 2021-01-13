@@ -8,7 +8,7 @@ function fish_mode_prompt
       echo ''
     case replace_one
       set_color --bold brmagenta
-      echo '(R)  '
+      echo '(R) '
     case visual
       set_color --bold cyan
       echo '(V) '
