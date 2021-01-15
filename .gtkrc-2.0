@@ -1,7 +1,7 @@
 include "/home/ghost/.gtkrc-2.0.mine"
 gtk-theme-name="Nordic-darker"
 gtk-icon-theme-name="MB-Pistachio-Suru-GLOW"
-gtk-font-name="SauceCodePro NF 11"
+gtk-font-name="Fantasque Sans Mono 11"
 gtk-cursor-theme-name="volantes_cursors"
 gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_BOTH
