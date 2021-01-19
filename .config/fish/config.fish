@@ -23,6 +23,12 @@ set fish_key_bindings fish_user_key_bindings
 # Set theme settings
 set theme_complete_path yes
 
+# Autostart tmux
+if status is-interactive
+and not set -q TMUX
+    exec tmux
+end
+
 # Aliases
 alias gs "git status"
 alias gaa "git add ."
