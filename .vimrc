@@ -63,10 +63,12 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+" Currently does not work on ST
 nnoremap <silent> <C-Up> :res -1<CR>
 nnoremap <silent> <C-Down> :res +1<CR>
 nnoremap <silent> <C-Right> :vertical res +1<CR>
 nnoremap <silent> <C-Left> :vertical res -1<CR>
+
 let mapleader = "," 
 let maplocalleader ="\<space>"
 :set splitright
