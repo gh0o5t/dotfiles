@@ -8,8 +8,9 @@ Plug 'tpope/vim-sensible'
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'sickill/vim-monokai', { 'as': 'monokai' }
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
 "Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'jiangmiao/auto-pairs'
@@ -18,6 +19,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'ervandew/supertab'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 
@@ -37,11 +39,23 @@ map <silent> <C-n> :NERDTreeToggle<CR>
 " python-mode
 map <silent> <C-l> :PymodeLintAuto
 
+" Vim lightline
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
+
 " vim-airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='nord'
-let g:airline#extensions#tabline#show_close_button = 0
-let g:airline_powerline_fonts = 1
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline_theme='nord'
+"let g:airline#extensions#tabline#show_close_button = 0
+"let g:airline_powerline_fonts = 1
 
 
 " Polygot
@@ -63,12 +77,10 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-" Currently does not work on ST
 nnoremap <silent> <C-Up> :res -1<CR>
 nnoremap <silent> <C-Down> :res +1<CR>
 nnoremap <silent> <C-Right> :vertical res +1<CR>
 nnoremap <silent> <C-Left> :vertical res -1<CR>
-
 let mapleader = "," 
 let maplocalleader ="\<space>"
 :set splitright

@@ -1,26 +1,26 @@
 # Colors
 function orange
-    set_color -o ee5819
+    set_color -o D08770
 end
 
 function yellow
-    set_color -o b58900
+    set_color -o EBCB8B
 end
 
 function red
-    set_color -o d30102
+    set_color -o BF616A 
 end
 
 function cyan
-    set_color -o 2aa198
+    set_color -o 88C0D0
 end
 
 function white
-    set_color -o fdf6e3
+    set_color -o ECEFF4
 end
 
 function dim
-    set_color -o 4f4f4f
+    set_color -o D8DEE9
 end
 
 function off
