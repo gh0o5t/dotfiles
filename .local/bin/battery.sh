@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Check if battery directories are detected
-[ ! -e /sys/class/power_supply/BAT?* ] && echo "No battery" && exit 1
+[ ! -e /sys/class/power_supply/BAT?* ] && exit 1
 
 # Loop through all attached batteries and format the info
 for battery in /sys/class/power_supply/BAT?*

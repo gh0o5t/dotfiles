@@ -81,7 +81,13 @@ nnoremap <silent> <C-Up> :res -1<CR>
 nnoremap <silent> <C-Down> :res +1<CR>
 nnoremap <silent> <C-Right> :vertical res +1<CR>
 nnoremap <silent> <C-Left> :vertical res -1<CR>
+
+
+" Own config
 let mapleader = "," 
 let maplocalleader ="\<space>"
-:set splitright
-:set splitbelow
+set splitright
+set splitbelow
+set mouse=a
+set ttymouse=sgr
+
