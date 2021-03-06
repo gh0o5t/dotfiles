@@ -32,4 +32,3 @@ alias gck "git checkout $argv"
 alias gckb "git checkout -b $argv"
 alias rr "ranger"
 
-
