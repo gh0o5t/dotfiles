@@ -7,22 +7,20 @@ Plug 'tpope/vim-sensible'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'sickill/vim-monokai', { 'as': 'monokai' }
 Plug 'itchyny/lightline.vim'
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
-Plug 'davidhalter/jedi-vim'
-Plug 'arcticicestudio/nord-vim'
+"Plug 'davidhalter/jedi-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'ervandew/supertab'
 Plug 'ryanoasis/vim-devicons'
 Plug 'lervag/vimtex'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'joshdick/onedark.vim'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'reedes/vim-lexical'
 call plug#end()
 
 
@@ -32,6 +30,14 @@ colorscheme dracula
 
 
 "-----------------------------------------------------Plugin Settings-----------------------------------------------------
+"vim-lexical
+augroup lexical
+  autocmd!
+  autocmd FileType tex call lexical#init()
+augroup END
+
+let g:lexical#spell = 1
+let g:lexical#spelllang = ['hu']
 
 " Vim startify
 let g:startify_custom_header = [
@@ -52,8 +58,8 @@ autocmd FileType python setlocal completeopt-=preview
 
 
 "" NERDTree
-map <silent> <C-n> :NERDTreeToggle<CR>
-let NERDTreeIgnore = ['\.fls$', '\.lot$', '\.aux$', '\.aux$', '\.bbl$', '\.loa$', '\.blg$', '\.synctex\.gz$', '\.fdb_latexmk$', '\.out$', '\.lof$']
+
+"let NERDTreeIgnore = ['\.fls$', '\.lot$', '\.aux$', '\.aux$', '\.bbl$', '\.loa$', '\.blg$', '\.synctex\.gz$', '\.fdb_latexmk$', '\.out$', '\.lof$']
 
 
 " Vim lightline
@@ -69,14 +75,14 @@ let g:lightline = {
       \ }
 
 
-" Polygot
-syntax on
-"-----------------------------------------------------------------------------------------------------------------------
+""-----------------------------------------------------------------------------------------------------------------------
 
 
 
 
 "-----------------------------------------------------General settings--------------------------------------------------
+let mapleader =  "\<space>"
+let maplocalleader = ","
 syntax enable                           " Enables syntax highlighing
 filetype plugin on                      " Filetype plugin
 filetype indent on
@@ -85,7 +91,7 @@ set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
-set ruler              			        " Show the cursor position all the time
+set ruler              			            " Show the cursor position all the time
 set cmdheight=2                         " More space for displaying messages
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set mouse=a                             " Enable your mouse
@@ -122,15 +128,45 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 "-----------------------------------------------------------------------------------------------------------------------
 
-"----------------------------------------------------------Remaps-------------------------------------------------------
+"---------------------------------------------------------Key maps------------------------------------------------------
 " Own key remaps
 inoremap jj <Esc>
+inoremap kj <Esc>
+inoremap jj <Esc>
+
+" Navigate between splits 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-let mapleader =  "\<space>"
-let maplocalleader = ","
+
+" Use alt + hjkl to resize windows
+nnoremap <M-j>    :resize -2<CR>
+nnoremap <M-k>    :resize +2<CR>
+nnoremap <M-h>    :vertical resize -2<CR>
+nnoremap <M-l>    :vertical resize +2<CR>
+
+" TAB in general mode will move to text buffer
+nnoremap <TAB> :bnext<CR>
+" SHIFT-TAB will go back
+nnoremap <S-TAB> :bprevious<CR>
+
+" Alternate way to save
+nnoremap <C-s> :w<CR>
+" Alternate way to quit
+nnoremap <C-Q> :wq!<CR>
+" Use control-c instead of escape
+nnoremap <C-c> <Esc>
+
+" Better tabbing
+vnoremap < <gv
+vnoremap > >gv
+
+nnoremap <Leader>o o<Esc>^Da
+nnoremap <Leader>O O<Esc>^Da
+
+" Plugins
+map <silent> <C-n> :NERDTreeToggle<CR>
 map <leader>r :RangerNewTab<CR>
 map <leader>s :FZF<CR>
 "-----------------------------------------------------------------------------------------------------------------------
