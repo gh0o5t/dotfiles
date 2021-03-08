@@ -20,7 +20,6 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'francoiscabrol/ranger.vim'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'reedes/vim-lexical'
 call plug#end()
 
 
@@ -30,14 +29,6 @@ colorscheme dracula
 
 
 "-----------------------------------------------------Plugin Settings-----------------------------------------------------
-"vim-lexical
-augroup lexical
-  autocmd!
-  autocmd FileType tex call lexical#init()
-augroup END
-
-let g:lexical#spell = 1
-let g:lexical#spelllang = ['hu']
 
 " Vim startify
 let g:startify_custom_header = [
@@ -83,11 +74,11 @@ let g:lightline = {
 "-----------------------------------------------------General settings--------------------------------------------------
 let mapleader =  "\<space>"
 let maplocalleader = ","
+let g:dracula_colorterm = 0
 syntax enable                           " Enables syntax highlighing
 filetype plugin on                      " Filetype plugin
 filetype indent on
 set hidden                              " Required to keep multiple buffers open multiple buffers
-set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
@@ -130,8 +121,6 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 "---------------------------------------------------------Key maps------------------------------------------------------
 " Own key remaps
-inoremap jj <Esc>
-inoremap kj <Esc>
 inoremap jj <Esc>
 
 " Navigate between splits 
