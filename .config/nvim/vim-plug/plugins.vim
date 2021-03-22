@@ -12,13 +12,30 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'scrooloose/NERDTree'
-    " Auto pairs 
+    " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    " Easier commenting
+    " Themes
+    Plug 'arcticicestudio/nord-vim' 
+    Plug 'dracula/vim', { 'as': 'dracula' }
+    " For informative line
+    Plug 'itchyny/lightline.vim'
+    " For better comments 
     Plug 'preservim/nerdcommenter'
-    " Nord  Theme
-    Plug 'arcticicestudio/nord-vim'
-    " Dracula Theme
-    Plug 'dracula/vim' 
+    " For nice incons
+    Plug 'ryanoasis/vim-devicons'
+    " Ranger support
+    Plug 'francoiscabrol/ranger.vim'
+    " Ranger dependency
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    " Start page
+    Plug 'mhinz/vim-startify'
+    " Fuzzy finder
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    " Git integration
+    Plug 'tpope/vim-fugitive'
+    " LaTex support
+    Plug 'lervag/vimtex'
+    " Better completion
+    Plug 'ervandew/supertab' 
 
 call plug#end()

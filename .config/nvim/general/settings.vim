@@ -1,17 +1,30 @@
+" set theme
+colorscheme dracula
+let g:dracula_colorterm = 0
+
+" For being able to use better coloschemes
+" https://stackoverflow.com/questions/62702766/termguicolors-in-vim-makes-everything-black-and-white
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
 " set leader key
 let g:mapleader = "\<Space>"
-" let mapleader = "," 
-" let maplocalleader ="\<space>"
 
-colorscheme dracula                     " Theme
+" Set local leader
+let maplocalleader = ","
+
+" For toggling hlsearch (keymaps)
+let hlstate=0
+
 syntax enable                           " Enables syntax highlighing
+"filetype plugin on                      " Filetype plugin
+"filetype indent on
 set hidden                              " Required to keep multiple buffers open multiple buffers
-set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
-set noruler              			            " Show the cursor position all the time
-set noshowcmd                           " Stop flickering
+set ruler              			            " Show the cursor position all the time
 set cmdheight=2                         " More space for displaying messages
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set mouse=a                             " Enable your mouse
@@ -25,8 +38,8 @@ set smarttab                            " Makes tabbing smarter will realize you
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
-set laststatus=0                        " Always display the status line
-set rnu                                 " Relative Line numbers
+set laststatus=2                        " Must be 2 for working with lightline
+set rnu                                 " Line numbers
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
@@ -37,17 +50,9 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
-"set autochdir                          " Your working directory will always be the same as your working directory
-set termguicolors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"set autochdir                           " Your working directory will always be the same as your working directory
 
+au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
-
-"----------------------------Plugin settings---------------------------
-
-" NERDTree
-map <silent> <C-n> :NERDTreeToggle<CR>
-" jlet NERDTreeIgnore = ['\.fls$', '\.lot$', '\.aux$', '\.aux$', '\.bbl$', '\.loa$', '\.blg$', '\.synctex\.gz$', '\.fdb_latexmk$', '\.out$', '\.lof$']
-
-"----------------------------------------------------------------------
+" You can't stop me
+cmap w!! w !sudo tee %
